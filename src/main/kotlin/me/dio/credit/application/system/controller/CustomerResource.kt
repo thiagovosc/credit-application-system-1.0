@@ -33,7 +33,7 @@ class CustomerResource(
   fun deleteCustomer(@PathVariable id: Long) = this.customerService.delete(id)
 
   @PatchMapping
-  fun upadateCustomer(
+  fun updateCustomer(
     @RequestParam(value = "customerId") id: Long,
     @RequestBody @Valid customerUpdateDto: CustomerUpdateDto
   ): ResponseEntity<CustomerView> {

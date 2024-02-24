@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration
 
 @Configuration
 class Swagger3config {
-    @Bean
+@Bean
     fun publicApi(): GroupedOpenApi? {
         return GroupedOpenApi.builder()
             .group("springcreditapplicationsystem-public")
